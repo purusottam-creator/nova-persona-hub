@@ -1,26 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "sonner";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Skills } from "@/components/Skills";
+import { Projects } from "@/components/Projects";
+import { Timeline } from "@/components/Timeline";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { ParticleField } from "@/components/ParticleField";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "Purusottam Nanda — MERN Stack & AI Developer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Purusottam Nanda — B.Tech CSE (AI) student and MERN stack developer building futuristic, AI-augmented web experiences.",
+      },
+      { property: "og:title", content: "Purusottam Nanda — MERN Stack & AI Developer" },
+      {
+        property: "og:description",
+        content:
+          "Futuristic developer portfolio: projects, skills, journey, and contact.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="relative min-h-screen">
+      <ParticleField />
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Timeline />
+        <Contact />
+      </main>
+      <Footer />
+      <Toaster position="bottom-right" theme="dark" richColors />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
