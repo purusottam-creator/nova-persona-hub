@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Download, Mail, Github, Linkedin, Instagram } from "lucide-react";
+import resumeAsset from "@/assets/Purusottam_Nanda_Resume.pdf.asset.json";
 import { useEffect, useState, type MouseEvent } from "react";
 import avatar from "@/assets/avatar.jpg";
 
