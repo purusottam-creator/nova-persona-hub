@@ -156,7 +156,7 @@ export function Hero() {
 
           <div className="mt-8 flex items-center gap-3">
             {[
-              { Icon: Github, href: "https://github.com", label: "GitHub" },
+              { Icon: Github, href: "https://github.com/purusotam-ctrl", label: "GitHub" },
               { Icon: Linkedin, href: "https://www.linkedin.com/in/purusottam-nanda-a72106295?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
               { Icon: Instagram, href: "https://www.instagram.com/nanda_babu_9?igsh=MXhtMGwwN2g0Z2w2dA==", label: "Instagram" },
               { Icon: Mail, href: "#contact", label: "Email" },
