@@ -22,8 +22,8 @@ function Counter({ to, suffix = "+" }: { to: number; suffix?: string }) {
 }
 
 const stats = [
-  { value: 15, label: "Projects Built" },
-  { value: 12, label: "Technologies" },
+  { value: 4, label: "Projects Built" },
+  { value: 8, label: "Technologies" },
   { value: 6, label: "Certifications" },
   { value: 3, label: "Years Coding" },
 ];
