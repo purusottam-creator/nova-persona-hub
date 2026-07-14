@@ -157,7 +157,7 @@ export function Hero() {
           <div className="mt-8 flex items-center gap-3">
             {[
               { Icon: Github, href: "https://github.com", label: "GitHub" },
-              { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+              { Icon: Linkedin, href: "https://www.linkedin.com/in/purusottam-nanda-a72106295?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
               { Icon: Mail, href: "#contact", label: "Email" },
             ].map(({ Icon, href, label }) => (
               <a
