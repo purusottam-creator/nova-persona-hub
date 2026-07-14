@@ -125,8 +125,8 @@ export function Contact() {
           >
             <div className="glass rounded-2xl p-6">
               <p className="text-xs font-mono text-muted-foreground">REACH OUT</p>
-              <a href="mailto:npurusotam90@gmail.com.com" className="mt-2 block text-lg font-semibold hover:text-primary transition-colors">
-                npurusotam90@gmail.com.com
+              <a href={`mailto:${CONTACT_EMAIL}`} className="mt-2 block text-lg font-semibold hover:text-primary transition-colors">
+                {CONTACT_EMAIL}
               </a>
               <p className="text-sm text-muted-foreground mt-1">Replies within 24h.</p>
             </div>
