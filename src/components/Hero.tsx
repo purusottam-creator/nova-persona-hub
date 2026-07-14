@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { Download, Mail, Github, Linkedin } from "lucide-react";
+import { Download, Mail, Github, Linkedin, Instagram } from "lucide-react";
 import { useEffect, useState, type MouseEvent } from "react";
 import avatar from "@/assets/avatar.jpg";
 
@@ -158,6 +158,7 @@ export function Hero() {
             {[
               { Icon: Github, href: "https://github.com", label: "GitHub" },
               { Icon: Linkedin, href: "https://www.linkedin.com/in/purusottam-nanda-a72106295?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
+              { Icon: Instagram, href: "https://www.instagram.com/nanda_babu_9?igsh=MXhtMGwwN2g0Z2w2dA==", label: "Instagram" },
               { Icon: Mail, href: "#contact", label: "Email" },
             ].map(({ Icon, href, label }) => (
               <a
