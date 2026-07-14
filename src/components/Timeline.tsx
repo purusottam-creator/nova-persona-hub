@@ -2,32 +2,39 @@ import { motion } from "framer-motion";
 
 const items = [
   {
-    year: "2024 — Present",
+    year: "2023 — Present",
     title: "B.Tech in CSE (Artificial Intelligence)",
-    place: "Engineering College",
-    desc: "Specializing in AI/ML alongside core computer science. Building full-stack projects on the side.",
+    place: "GIFT Autonomous, Bhubaneswar",
+    desc: "Pursuing Computer Science & Engineering with a specialization in Artificial Intelligence.",
     tag: "Education",
   },
   {
-    year: "2025",
-    title: "MERN Stack Developer Intern",
-    place: "Remote Startup",
-    desc: "Shipped REST APIs, dashboards, and auth flows. Owned features end-to-end with React + Node.",
+    year: "May 2025 — July 2025",
+    title: "Backend Web Development Intern",
+    place: "Web Bocket",
+    desc: "Developed backend APIs with Express.js, integrated MongoDB, implemented authentication and built REST APIs end-to-end.",
     tag: "Internship",
   },
   {
-    year: "2025",
-    title: "Full-Stack Web Development — Certification",
-    place: "Online Specialization",
-    desc: "Completed advanced full-stack track covering MongoDB, Express, React, Node and deployment.",
-    tag: "Certification",
+    year: "July 2024",
+    title: "IT / OT Intern",
+    place: "Skill Development Institute",
+    desc: "Worked on IoT applications, smart agriculture, industrial automation, sensor networks and real-time data monitoring.",
+    tag: "Internship",
   },
   {
-    year: "2024",
-    title: "Hackathon Finalist — AI Build",
-    place: "National Hackathon",
-    desc: "Built an AI assistant for students in 36 hours. Selected as a top-10 team out of 200+.",
-    tag: "Achievement",
+    year: "2023",
+    title: "Higher Secondary",
+    place: "Salipur Higher Secondary School",
+    desc: "Completed 10+2 with a focus on science and mathematics.",
+    tag: "Education",
+  },
+  {
+    year: "2021",
+    title: "Matriculation",
+    place: "Janaki Ballav High School",
+    desc: "Completed secondary education with distinction.",
+    tag: "Education",
   },
 ];
 
@@ -49,7 +56,6 @@ export function Timeline() {
         </motion.div>
 
         <div className="relative pl-8 sm:pl-12">
-          {/* line */}
           <div className="absolute left-3 sm:left-5 top-2 bottom-2 w-px bg-gradient-to-b from-[var(--neon-cyan)] via-[var(--neon-violet)] to-transparent" />
 
           <ul className="space-y-10">
@@ -62,7 +68,6 @@ export function Timeline() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="relative"
               >
-                {/* node */}
                 <span className="absolute -left-[1.85rem] sm:-left-[2.4rem] top-1.5 grid place-items-center w-4 h-4 rounded-full bg-background border border-primary">
                   <span className="w-1.5 h-1.5 rounded-full bg-[var(--neon-cyan)] shadow-[0_0_12px_var(--neon-cyan)]" />
                 </span>

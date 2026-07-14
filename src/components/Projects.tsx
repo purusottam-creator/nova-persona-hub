@@ -4,37 +4,37 @@ import type { MouseEvent } from "react";
 
 const projects = [
   {
-    title: "NeuroNotes — AI Study Assistant",
+    title: "Suraksha Setu — Smart Tourist Safety Platform",
     description:
-      "An AI-powered note-taking app that summarizes lectures, generates flashcards, and answers questions from your own material.",
-    tech: ["React", "Node.js", "MongoDB", "OpenAI"],
+      "AI-powered tourist safety platform with SOS system, live location tracking, QR authentication, emergency response, and a tourist dashboard.",
+    tech: ["MERN", "AI", "MongoDB", "Express", "React", "Node"],
     github: "#",
     live: "#",
     accent: "from-cyan-400/30 to-violet-500/30",
   },
   {
-    title: "PulseCart — MERN E-commerce",
+    title: "Soil Moisture Monitoring System",
     description:
-      "Full-stack store with cart, JWT auth, Stripe payments, admin dashboard, and real-time inventory.",
-    tech: ["MERN", "Stripe", "Tailwind", "JWT"],
-    github: "#",
-    live: "#",
-    accent: "from-pink-400/30 to-orange-400/30",
-  },
-  {
-    title: "DevHub — Developer Social",
-    description:
-      "A developer-first social network: snippets, devlogs, follows and a live coding feed powered by sockets.",
-    tech: ["React", "Express", "Socket.io", "MongoDB"],
+      "Smart irrigation system that measures soil moisture in real time and helps optimize water usage for precision farming.",
+    tech: ["IoT", "Sensors", "Arduino", "Smart Agriculture"],
     github: "#",
     live: "#",
     accent: "from-emerald-400/30 to-cyan-400/30",
   },
   {
-    title: "VisionML — Image Classifier",
+    title: "Student Information Management System",
     description:
-      "End-to-end ML pipeline serving a CNN image classifier through a clean REST API and React dashboard.",
-    tech: ["Python", "TensorFlow", "FastAPI", "React"],
+      "Desktop application to manage student records with full CRUD operations, search, and a clean, user-friendly interface.",
+    tech: ["Python", "Tkinter", "JSON"],
+    github: "#",
+    live: "#",
+    accent: "from-pink-400/30 to-orange-400/30",
+  },
+  {
+    title: "Personal Portfolio Website",
+    description:
+      "Modern responsive portfolio with cinematic animations, glassmorphism, and optimized performance.",
+    tech: ["React", "Node.js", "Express", "Tailwind CSS"],
     github: "#",
     live: "#",
     accent: "from-violet-400/30 to-pink-400/30",

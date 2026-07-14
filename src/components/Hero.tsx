@@ -4,11 +4,13 @@ import { useEffect, useState, type MouseEvent } from "react";
 import avatar from "@/assets/avatar.jpg";
 
 const ROLES = [
+  "AI Engineer",
   "MERN Stack Developer",
-  "AI Enthusiast",
-  "Full Stack Developer",
-  "Problem Solver",
+  "Backend Developer",
+  "Full Stack Web Developer",
+  "IoT Enthusiast",
 ];
+
 
 function useTyping(words: string[], speed = 80, pause = 1400) {
   const [text, setText] = useState("");
@@ -125,9 +127,10 @@ export function Hero() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.05]">
             Hi, I'm <span className="text-gradient">Purusottam Nanda</span>
           </h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-lg">
-            B.Tech CSE (AI) Student & MERN Stack Developer crafting intelligent, beautifully engineered web experiences.
+          <p className="mt-4 text-lg text-muted-foreground max-w-xl">
+            Building intelligent software that combines Artificial Intelligence, Full Stack Development, and modern cloud technologies to solve real-world problems.
           </p>
+
 
           <div className="mt-6 flex items-center gap-2 font-mono text-base sm:text-lg">
             <span className="text-muted-foreground">{">"}</span>
