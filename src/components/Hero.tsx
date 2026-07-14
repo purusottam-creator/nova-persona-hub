@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Download, Mail, Github, Linkedin, Instagram } from "lucide-react";
+import resumeAsset from "@/assets/Purusottam_Nanda_Resume.pdf.asset.json";
 import { useEffect, useState, type MouseEvent } from "react";
 import avatar from "@/assets/avatar.jpg";
 
@@ -140,8 +141,10 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href="/resume.pdf"
-              download
+              href={resumeAsset.url}
+              download="Purusottam_Nanda_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-br from-[var(--neon-cyan)] to-[var(--neon-violet)] text-background font-semibold text-sm shadow-[var(--shadow-neon)] hover:scale-[1.03] active:scale-[0.98] transition-transform"
             >
               <Download className="w-4 h-4" /> Download Resume

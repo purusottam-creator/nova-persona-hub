@@ -10,11 +10,13 @@ const schema = z.object({
   message: z.string().trim().min(5, "Message is too short").max(1000),
 });
 
+const CONTACT_EMAIL = "npurusotm90@gmail.com";
+
 const socials = [
-  { Icon: Github, href: "https://github.com", label: "GitHub" },
-  { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { Icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { Icon: Mail, href: "mailto:npurusotam90@gmail.com.com", label: "Email" },
+  { Icon: Github, href: "https://github.com/purusotam-ctrl", label: "GitHub" },
+  { Icon: Linkedin, href: "https://www.linkedin.com/in/purusottam-nanda-a72106295", label: "LinkedIn" },
+  { Icon: Instagram, href: "https://www.instagram.com/nanda_babu_9", label: "Instagram" },
+  { Icon: Mail, href: `mailto:${CONTACT_EMAIL}`, label: "Email" },
 ];
 
 export function Contact() {
@@ -33,11 +35,13 @@ export function Contact() {
       return;
     }
     setLoading(true);
-    // Simulated submit — wire to Lovable Cloud later for DB persistence.
-    await new Promise((r) => setTimeout(r, 700));
+    const { name, email, message } = parsed.data;
+    const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
     setLoading(false);
     (e.target as HTMLFormElement).reset();
-    toast.success("Message sent — I'll get back to you soon.");
+    toast.success("Opening your email app to send the message.");
   };
 
   return (
@@ -121,8 +125,8 @@ export function Contact() {
           >
             <div className="glass rounded-2xl p-6">
               <p className="text-xs font-mono text-muted-foreground">REACH OUT</p>
-              <a href="mailto:npurusotam90@gmail.com.com" className="mt-2 block text-lg font-semibold hover:text-primary transition-colors">
-                npurusotam90@gmail.com.com
+              <a href={`mailto:${CONTACT_EMAIL}`} className="mt-2 block text-lg font-semibold hover:text-primary transition-colors">
+                {CONTACT_EMAIL}
               </a>
               <p className="text-sm text-muted-foreground mt-1">Replies within 24h.</p>
             </div>
