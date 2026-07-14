@@ -14,7 +14,7 @@ const socials = [
   { Icon: Github, href: "https://github.com", label: "GitHub" },
   { Icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
   { Icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-  { Icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { Icon: Mail, href: "mailto:npurusotam90@gmail.com.com", label: "Email" },
 ];
 
 export function Contact() {
@@ -121,8 +121,8 @@ export function Contact() {
           >
             <div className="glass rounded-2xl p-6">
               <p className="text-xs font-mono text-muted-foreground">REACH OUT</p>
-              <a href="mailto:hello@example.com" className="mt-2 block text-lg font-semibold hover:text-primary transition-colors">
-                hello@example.com
+              <a href="mailto:npurusotam90@gmail.com.com" className="mt-2 block text-lg font-semibold hover:text-primary transition-colors">
+                npurusotam90@gmail.com.com
               </a>
               <p className="text-sm text-muted-foreground mt-1">Replies within 24h.</p>
             </div>
