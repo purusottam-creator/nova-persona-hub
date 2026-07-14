@@ -42,6 +42,7 @@ function Index() {
         <Skills />
         <Projects />
         <Timeline />
+        <Certificates />
         <Contact />
       </main>
       <Footer />
